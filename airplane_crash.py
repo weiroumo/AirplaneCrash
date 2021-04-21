@@ -17,3 +17,6 @@ import pandas as pd
 # import airplane crash CSV file into a Pandas DataFrame and print its head
 df = pd.read_csv('Airplane_Crashes_and_Fatalities_Since_1908_20190820105639.csv')
 print(df.head())
+
+# sort data
+df.sort_values(["Date", "Fatalities"], ascending = [False,True])
